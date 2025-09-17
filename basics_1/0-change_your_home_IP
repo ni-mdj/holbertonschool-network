@@ -1,11 +1,3 @@
 #!/usr/bin/env bash
-# localhost / 127.0.0.2
-# facebook.com / 8.8.8.8
-
-#suprime ls anciennes ligne loclhost / fb.com
-sudo sed -i '/localhost/d' /etc/hosts
-sudo sed -i '/facebook\.com/d' /etc/hosts
-
-#ajt ds nouvel correspondance
-echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts > /dev/null
-echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts > /dev/null
+# This script configures an Ubuntu server with requirements
+echo -e "127.0.0.2\tlocalhost\n8.8.8.8\tfacebook.com" | sudo tee -a /etc/hosts
