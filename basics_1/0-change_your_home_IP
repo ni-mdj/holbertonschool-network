@@ -1,6 +1,11 @@
-#!/bin/bash
-# localhost en 127.0.0.2
-# facebook.com en 8.8.8.8
+#!/usr/bin/env bash
+# localhost / 127.0.0.2
+# facebook.com / 8.8.8.8
 
-echo "127.0.0.2 localhost" > /etc/hosts
-echo "8.8.8.8 facebook.com" >> /etc/hosts
+#suprime ls anciennes ligne loclhost / fb.com
+sudo sed -i '/localhost/d' /etc/hosts
+sudo sed -i '/facebook\.com/d' /etc/hosts
+
+#ajt ds nouvel correspondance
+echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts > /dev/null
+echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts > /dev/null
