@@ -26,6 +26,27 @@ It covers how the web stack works on top of the Internet, from the moment you hi
   - The answer file `0-blog_post`  
   - The submission field  
 
+
+---
+
+### 1. Everything’s better with a pretty diagram (mandatory)
+- Add a **diagram** to your blog post illustrating the flow of the request.
+- The diagram must show:
+  - DNS resolution  
+  - The request hitting the server IP on the right port  
+  - That traffic is **encrypted**  
+  - That traffic goes through a **firewall**  
+  - The request is distributed via a **load balancer**  
+  - The **web server** serving the web page  
+  - The **application server** generating the page  
+  - The **application server** querying the **database**  
+
+- Tools you can use: **Gliffy**, **Lucidchart**, **Draw.io**, or any equivalent.  
+
+- Share the URL of your diagram image in:
+  - The answer file `1-what_happen_when_diagram`  
+  - The submission field  
+
 ## Diagram ideas : 
 
 User (Browser)
